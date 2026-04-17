@@ -4,9 +4,9 @@ function App() {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    fetch("https://my-backend-gfw.onrender.com/api/test")
-      .then(res => res.json())
-      .then(data => setData(data.message));
+    fetch("https://my-backend-gfiv.onrender.com/api/test")
+      .then((res) => res.json())
+      .then((data) => setData(data.message));
   }, []);
 
   return (
