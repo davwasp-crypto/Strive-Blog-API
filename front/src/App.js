@@ -6,7 +6,8 @@ function App() {
   useEffect(() => {
     fetch("https://my-backend-gfiv.onrender.com/api/test")
       .then((res) => res.json())
-      .then((data) => setData(data.message));
+      .then((data) => setData(data.message))
+      .catch((err) => console.error("Errore:", err));
   }, []);
 
   return (
